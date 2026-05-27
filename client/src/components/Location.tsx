@@ -33,12 +33,12 @@ export default function Location() {
                 <div>
                   <h3 className="font-bold text-lg text-foreground mb-2">Dirección</h3>
                   <p className="text-muted-foreground">
-                    Calle Principal #123<br />
-                    La Esquina, Santo Domingo<br />
+                    F5J2+PC<br />
+                    Santo Domingo Este<br />
                     República Dominicana
                   </p>
                   <a
-                    href="https://maps.google.com/?q=Calle+Principal+123+La+Esquina+Santo+Domingo"
+                    href="https://maps.google.com/?q=F5J2%2BPC+Santo+Domingo+Este+Republica+Dominicana"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary font-semibold hover:underline mt-2 inline-block"
@@ -99,7 +99,7 @@ export default function Location() {
               {/* Embedded Google Map */}
               <iframe
                 title="Ubicación de Colmado La Esquina"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.4527647845!2d-69.94!3d18.48!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89e5c5c5c5c5%3A0x5c5c5c5c5c5c5c5c!2sSanto%20Domingo%2C%20Dominican%20Republic!5e0!3m2!1sen!2sus!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.4527647845!2d-69.8!3d18.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89e5c5c5c5c5%3A0xF5J2PC!2sF5J2%2BPC+Santo+Domingo+Este!5e0!3m2!1ses!2sdo!4v1234567890"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
