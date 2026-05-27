@@ -1,11 +1,21 @@
 import { MessageCircle, Zap } from 'lucide-react';
 
 export default function Hero() {
-  const whatsappNumber = '18095551234'; // Reemplazar con número real
-  const whatsappMessage = 'Hola, quiero hacer un pedido en el Colmado La Esquina';
+  const whatsappNumber = '18095995176'; // Número actualizado
+  const whatsappMessage = 'Hola, quiero hacer un pedido en LA RAZA';
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-b from-orange-50 to-white">
+      {/* Banner LA RAZA */}
+      <div className="absolute top-0 left-0 right-0 z-20 w-full">
+        <img
+          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663493930384/bnzY8ZPTnsMF9HbFfegyZD/banner-la-raza-V345udXvy5KA2LTk8XiWpC.webp"
+          alt="LA RAZA - Colmado Dominicano"
+          className="w-full h-auto object-cover"
+          loading="lazy"
+        />
+      </div>
+
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -18,7 +28,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-10 pt-96">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Left Content */}
           <div className="animate-slideInLeft">
