@@ -3,43 +3,43 @@ import { Music, Users, Sparkles, Clock, Flame, Award } from 'lucide-react';
 const benefits = [
   {
     id: 1,
-    title: 'Ambiente Premium',
-    description: 'Diseño moderno con iluminación sofisticada y decoración elegante',
+    title: 'Bebidas Dominicanas',
+    description: 'Ron Brugal, Barceló, Cerveza Presidente. Las marcas más icónicas de República Dominicana.',
     icon: Sparkles,
-    color: 'text-purple-500'
+    color: 'text-amber-600'
   },
   {
     id: 2,
-    title: 'Mixología Experta',
-    description: 'Nuestros mixólogos crean cócteles únicos con técnicas profesionales',
+    title: 'Whisky Premium',
+    description: 'Selección de whiskies importados para los más exigentes. Disfruta de la mejor calidad.',
     icon: Flame,
     color: 'text-orange-500'
   },
   {
     id: 3,
     title: 'Música en Vivo',
-    description: 'Disfruta de música en vivo y DJ sets durante los fines de semana',
+    description: 'Disfruta de música en vivo y DJ sets durante los fines de semana. Ambiente vibrante.',
     icon: Music,
     color: 'text-pink-500'
   },
   {
     id: 4,
     title: 'Abierto Siempre',
-    description: 'Disponible de lunes a domingo para que disfrutes cuando quieras',
+    description: 'Disponible de lunes a domingo para que disfrutes cuando quieras. 24/7 para ti.',
     icon: Clock,
     color: 'text-blue-500'
   },
   {
     id: 5,
     title: 'Comunidad Vibrante',
-    description: 'Conoce gente interesante en un ambiente acogedor y divertido',
+    description: 'Conoce gente interesante en un ambiente acogedor y divertido. Haz amigos nuevos.',
     icon: Users,
     color: 'text-cyan-500'
   },
   {
     id: 6,
     title: 'Eventos Especiales',
-    description: 'Organiza tu fiesta, cumpleaños o evento corporativo con nosotros',
+    description: 'Organiza tu fiesta, cumpleaños o evento corporativo con nosotros. Experiencia inolvidable.',
     icon: Award,
     color: 'text-yellow-500'
   }
@@ -55,7 +55,7 @@ export default function Benefits() {
             ¿Por Qué Elegir LA RAZA RD?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Más que un bar, es una experiencia de vida nocturna premium
+            Más que un bar, es una experiencia de vida nocturna premium dominicana
           </p>
         </div>
 

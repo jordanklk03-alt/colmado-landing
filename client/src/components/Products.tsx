@@ -1,29 +1,32 @@
-import { Wine, Flame, Sparkles } from 'lucide-react';
+import { Droplet, Beer, Wine } from 'lucide-react';
 
 const products = [
   {
     id: 1,
-    name: 'Cócteles Clásicos',
-    description: 'Mojito, Margarita, Daiquiri y más. Preparados con técnicas tradicionales y ingredientes premium.',
-    icon: Wine,
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663493930384/bnzY8ZPTnsMF9HbFfegyZD/cocktail-2-AZYUXGg9D7swbZjoUDLBLR.webp',
-    color: 'from-amber-500 to-orange-500'
+    name: 'Ron Dominicano',
+    description: 'Brugal y Barceló. Los rones más icónicos de República Dominicana. Perfectos para disfrutar solo o en tus bebidas favoritas.',
+    icon: Droplet,
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663493930384/bnzY8ZPTnsMF9HbFfegyZD/brugal-ron-4kZB3MuKksBRSarh38QEpD.webp',
+    color: 'from-amber-600 to-orange-600',
+    brands: ['Brugal', 'Barceló']
   },
   {
     id: 2,
-    name: 'Cócteles Signature',
-    description: 'Creaciones exclusivas de nuestros mixólogos. Bebidas innovadoras con sabores únicos.',
-    icon: Sparkles,
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663493930384/bnzY8ZPTnsMF9HbFfegyZD/cocktail-1-nuwYyb5sczW3zm2FBXGVvv.webp',
-    color: 'from-purple-500 to-pink-500'
+    name: 'Cerveza Presidente',
+    description: 'La cerveza número uno de República Dominicana. Fría, refrescante y perfecta para cualquier momento.',
+    icon: Beer,
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663493930384/bnzY8ZPTnsMF9HbFfegyZD/presidente-cerveza-DRrJYu9CgipHiEct6cKRcU.webp',
+    color: 'from-yellow-500 to-amber-500',
+    brands: ['Presidente']
   },
   {
     id: 3,
-    name: 'Shots Premium',
-    description: 'Selección de shots con licores importados. Perfectos para celebrar con amigos.',
-    icon: Flame,
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663493930384/bnzY8ZPTnsMF9HbFfegyZD/cocktail-3-fVHjGwfoYZS3mEZHe62hy4.webp',
-    color: 'from-red-500 to-rose-500'
+    name: 'Whisky Premium',
+    description: 'Selección de whiskies importados. Desde scotches clásicos hasta opciones premium para los más exigentes.',
+    icon: Wine,
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663493930384/bnzY8ZPTnsMF9HbFfegyZD/whisky-premium-CQosBuFdKKTH6WmJiXtSHm.webp',
+    color: 'from-amber-700 to-red-700',
+    brands: ['Macallan', 'Johnnie Walker', 'Jack Daniels']
   }
 ];
 
@@ -34,10 +37,10 @@ export default function Products() {
         {/* Header */}
         <div className="text-center mb-12 animate-fadeInUp">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Nuestras Bebidas
+            Nuestras Bebidas Premium
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Disfruta de cócteles premium preparados por nuestros mixólogos expertos
+            Las mejores marcas dominicanas e internacionales. Disfruta de la calidad que mereces.
           </p>
         </div>
 
@@ -71,8 +74,21 @@ export default function Products() {
                     <h3 className="text-xl font-bold text-foreground">{product.name}</h3>
                   </div>
                   <p className="text-muted-foreground mb-4">{product.description}</p>
+                  
+                  {/* Brands */}
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {product.brands.map((brand) => (
+                      <span
+                        key={brand}
+                        className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full"
+                      >
+                        {brand}
+                      </span>
+                    ))}
+                  </div>
+                  
                   <button className="w-full py-2 px-4 bg-primary/10 text-primary hover:bg-primary hover:text-white rounded-lg font-semibold transition-all duration-200">
-                    Ver Menú
+                    Consultar Disponibilidad
                   </button>
                 </div>
               </div>
@@ -83,10 +99,10 @@ export default function Products() {
         {/* CTA Section */}
         <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-8 md:p-12 text-center animate-fadeInUp">
           <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-            Reserva tu Mesa
+            Vive la Experiencia Dominicana
           </h3>
           <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-            Disfruta de una experiencia única en LA RAZA RD. Contáctanos para reservar tu mesa o conocer nuestros eventos especiales.
+            Disfruta de las mejores bebidas dominicanas e internacionales en LA RAZA RD. Reserva tu mesa y vive una noche inolvidable.
           </p>
           <a
             href="https://wa.me/18095995176?text=Hola,%20me%20gustaría%20reservar%20una%20mesa%20en%20LA%20RAZA%20RD"

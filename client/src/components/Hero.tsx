@@ -35,7 +35,7 @@ export default function Hero() {
             {/* Left Content */}
             <div className="animate-slideInLeft">
               <div className="inline-block mb-4 px-4 py-2 bg-primary/10 rounded-full">
-                <span className="text-primary font-semibold text-sm">🍹 Drink Bar Moderno</span>
+                <span className="text-primary font-semibold text-sm">🇩🇴 Bebidas Dominicanas Premium</span>
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 leading-tight">
@@ -43,7 +43,7 @@ export default function Hero() {
               </h1>
               
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Cócteles premium, ambiente sofisticado y música en vivo. Vive la mejor noche de tu vida en nuestro drink bar moderno.
+                Ron Brugal, Barceló, Cerveza Presidente y Whisky Premium. Vive la mejor noche de tu vida con las bebidas más icónicas de República Dominicana.
               </p>
 
               {/* CTA Buttons */}
@@ -65,7 +65,7 @@ export default function Hero() {
                   }}
                   className="px-6 py-3 border-2 border-primary text-primary hover:bg-primary/5 active:scale-95 transition-all duration-200 rounded-lg font-semibold"
                 >
-                  Ver Menú de Bebidas
+                  Ver Nuestras Bebidas
                 </button>
               </div>
 
