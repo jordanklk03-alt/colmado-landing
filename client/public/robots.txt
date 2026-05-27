@@ -1,0 +1,22 @@
+# Robots.txt para Colmado La Esquina
+# Documentación: https://developers.google.com/search/docs/crawling-indexing/robots/intro
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /.well-known
+Disallow: /api
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Sitemap
+Sitemap: https://colmado-landing.netlify.app/sitemap.xml
+
+# Crawl delay (en segundos)
+Crawl-delay: 1

@@ -1,25 +1,49 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
+import Products from '@/components/Products';
+import Benefits from '@/components/Benefits';
+import Testimonials from '@/components/Testimonials';
+import Location from '@/components/Location';
+import Footer from '@/components/Footer';
 
 /**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
+ * Landing Page para Colmado La Esquina
+ * 
+ * Diseño moderno, responsive y optimizado para Netlify
+ * - Navbar sticky con navegación y botón WhatsApp
+ * - Hero section con CTA principal
+ * - Secciones de productos, beneficios, testimonios y ubicación
+ * - Footer con enlaces y redes sociales
+ * - Botón flotante de WhatsApp
+ * - Animaciones suaves y lazy loading de imágenes
  */
-export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
 
+export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
+    <div className="min-h-screen flex flex-col bg-white">
+      {/* Navigation */}
+      <Navbar />
+
+      {/* Main Content */}
+      <main className="flex-1">
+        {/* Hero Section */}
+        <Hero />
+
+        {/* Products Section */}
+        <Products />
+
+        {/* Benefits Section */}
+        <Benefits />
+
+        {/* Testimonials Section */}
+        <Testimonials />
+
+        {/* Location Section */}
+        <Location />
       </main>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

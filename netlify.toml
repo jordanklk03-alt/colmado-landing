@@ -1,0 +1,68 @@
+# Configuración de Netlify para Colmado Landing Page
+# Documentación: https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  # Directorio a desplegar
+  publish = "dist/public"
+  
+  # Comando de construcción
+  command = "pnpm build"
+  
+  # Directorio de funciones (si se usa en el futuro)
+  functions = "dist/functions"
+
+# Redirecciones y reescrituras
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers personalizados para optimización
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Cache control para archivos estáticos
+    Cache-Control = "public, max-age=3600"
+    # Seguridad
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # Permite Google Maps
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# Cache para archivos estáticos
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.{js,css,webp,png,jpg,jpeg,svg,gif,woff,woff2}"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Optimización de imágenes
+[[headers]]
+  for = "/*.webp"
+  [headers.values]
+    Content-Type = "image/webp"
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Configuración de contextos de despliegue
+[context.production]
+  command = "pnpm build"
+  
+[context.deploy-preview]
+  command = "pnpm build"
+
+[context.branch-deploy]
+  command = "pnpm build"
+
+# Configuración de previsualización
+[dev]
+  command = "pnpm dev"
+  port = 3000
+  publish = "dist/public"
+  targetPort = 3000
+  autoLaunch = false
