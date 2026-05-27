@@ -2,9 +2,13 @@ import { MapPin, Clock, Phone } from 'lucide-react';
 
 export default function Location() {
   const schedules = [
-    { day: 'Lunes - Viernes', hours: '7:00 AM - 10:00 PM' },
-    { day: 'Sábado', hours: '7:00 AM - 11:00 PM' },
-    { day: 'Domingo', hours: '8:00 AM - 10:00 PM' }
+    { day: 'Lunes', hours: '12:00 - 24:00' },
+    { day: 'Martes', hours: '12:00 - 24:00' },
+    { day: 'Miércoles', hours: '12:00 - 24:00' },
+    { day: 'Jueves', hours: '12:00 - 24:00' },
+    { day: 'Viernes', hours: '12:00 - 24:00' },
+    { day: 'Sábado', hours: '12:00 - 24:00' },
+    { day: 'Domingo', hours: '12:00 - 24:00' }
   ];
 
   return (
@@ -78,10 +82,10 @@ export default function Location() {
                 <div>
                   <h3 className="font-bold text-lg text-foreground mb-2">Contacto</h3>
                   <p className="text-muted-foreground mb-3">
-                    Teléfono: <span className="font-semibold text-foreground">(809) 555-1234</span>
+                    Teléfono: <span className="font-semibold text-foreground">+1 (809) 599-5176</span>
                   </p>
                   <a
-                    href="https://wa.me/18095551234"
+                    href="https://wa.me/18095995176"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-primary inline-flex text-sm"
@@ -96,10 +100,10 @@ export default function Location() {
           {/* Right: Map */}
           <div className="animate-fadeInUp">
             <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
-              {/* Embedded Google Map */}
+              {/* Street View de Google Maps */}
               <iframe
-                title="Ubicación de Colmado La Esquina"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.4527647845!2d-69.8!3d18.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89e5c5c5c5c5%3A0xF5J2PC!2sF5J2%2BPC+Santo+Domingo+Este!5e0!3m2!1ses!2sdo!4v1234567890"
+                title="Street View - Colmado La Esquina"
+                src="https://www.google.com/maps/embed?pb=!1m0!3m2!1ses!2sdo!4v1234567890&q=place/F5J2+PC+Santo+Domingo+Este/@18.45,-69.8,3a,75y,90h,90t"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
