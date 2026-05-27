@@ -4,8 +4,8 @@ import { Menu, X, MessageCircle } from 'lucide-react';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   
-  const whatsappNumber = '18095551234'; // Reemplazar con número real
-  const whatsappMessage = 'Hola, quiero hacer un pedido';
+  const whatsappNumber = '18095995176'; // Número actualizado
+  const whatsappMessage = 'Hola, quiero hacer un pedido en LA RAZA RD';
 
   const scrollToSection = (id: string) => {
     setIsOpen(false);
@@ -22,9 +22,9 @@ export default function Navbar() {
             {/* Logo */}
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">C</span>
+                <span className="text-white font-bold text-lg">L</span>
               </div>
-              <span className="font-bold text-lg text-foreground hidden sm:inline">Colmado</span>
+              <span className="font-bold text-lg text-foreground hidden sm:inline">LA RAZA RD</span>
             </div>
 
             {/* Menu Desktop */}

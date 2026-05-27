@@ -37,7 +37,7 @@ export default function Hero() {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 leading-tight">
-              Tu Colmado de <span className="text-primary">Confianza</span>
+              LA RAZA RD - Tu <span className="text-primary">Confianza</span>
             </h1>
             
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
@@ -97,7 +97,7 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent rounded-3xl blur-3xl"></div>
               <img
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663493930384/bnzY8ZPTnsMF9HbFfegyZD/community-vibes-ju4MpnU8YPHWuhJaudWJpB.webp"
-                alt="Comunidad del Colmado"
+                alt="Comunidad LA RAZA RD"
                 className="relative rounded-3xl shadow-2xl object-cover w-full h-96"
                 loading="lazy"
               />

@@ -100,17 +100,26 @@ export default function Location() {
           {/* Right: Map */}
           <div className="animate-fadeInUp">
             <div className="relative h-96 rounded-xl overflow-hidden shadow-lg">
-              {/* Street View de Google Maps */}
-              <iframe
-                title="Street View - Colmado La Esquina"
-                src="https://www.google.com/maps/embed?pb=!1m0!3m2!1ses!2sdo!4v1234567890&q=place/F5J2+PC+Santo+Domingo+Este/@18.45,-69.8,3a,75y,90h,90t"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+              {/* Google Maps con ubicación visible */}
+              <div className="relative w-full h-full">
+                {/* Ubicación visible */}
+                <div className="absolute top-4 left-4 z-10 bg-white px-4 py-3 rounded-lg shadow-lg">
+                  <p className="font-bold text-foreground text-sm">LA RAZA RD</p>
+                  <p className="text-muted-foreground text-xs">F5J2+PC, Santo Domingo Este</p>
+                </div>
+                
+                {/* Street View */}
+                <iframe
+                  title="Street View - LA RAZA RD"
+                  src="https://www.google.com/maps/embed?pb=!1m0!3m2!1ses!2sdo!4v1234567890&q=place/F5J2+PC+Santo+Domingo+Este/@18.45,-69.8,3a,75y,90h,90t"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>

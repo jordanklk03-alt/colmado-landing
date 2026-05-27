@@ -52,7 +52,7 @@ export default function Benefits() {
         {/* Header */}
         <div className="text-center mb-12 animate-fadeInUp">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            ¿Por Qué Elegir Colmado La Esquina?
+            ¿Por Qué Elegir LA RAZA RD?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Somos más que una tienda, somos parte de tu comunidad

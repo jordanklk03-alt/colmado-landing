@@ -7,7 +7,7 @@ import Location from '@/components/Location';
 import Footer from '@/components/Footer';
 
 /**
- * Landing Page para Colmado La Esquina
+ * Landing Page para LA RAZA RD
  * 
  * Diseño moderno, responsive y optimizado para Netlify
  * - Navbar sticky con navegación y botón WhatsApp

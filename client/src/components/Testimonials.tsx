@@ -45,7 +45,7 @@ const testimonials = [
     id: 6,
     name: 'Pedro Sánchez',
     role: 'Padre de familia',
-    content: 'Excelente relación calidad-precio. Es mi colmado de confianza.',
+    content: 'Excelente relación calidad-precio. LA RAZA RD es mi tienda de confianza.',
     rating: 5,
     avatar: '👨‍👧‍👦'
   }
@@ -101,7 +101,7 @@ export default function Testimonials() {
             ¿Quieres compartir tu experiencia con nosotros?
           </p>
           <a
-            href="https://wa.me/18095551234?text=Hola,%20quiero%20compartir%20mi%20experiencia%20con%20Colmado%20La%20Esquina"
+                href="https://wa.me/18095995176?text=Hola,%20quiero%20compartir%20mi%20experiencia%20con%20LA%20RAZA%20RD"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary inline-flex"
