@@ -1,29 +1,29 @@
-import { ShoppingBag, Zap, Leaf } from 'lucide-react';
+import { Wine, Flame, Sparkles } from 'lucide-react';
 
 const products = [
   {
     id: 1,
-    name: 'Bebidas Refrescantes',
-    description: 'Jugos naturales, refrescos y bebidas frías para toda la familia',
-    icon: ShoppingBag,
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663493930384/bnzY8ZPTnsMF9HbFfegyZD/products-showcase-NXctBHpo9BkppW6zCuR5uQ.webp',
-    color: 'from-blue-500 to-cyan-500'
+    name: 'Cócteles Clásicos',
+    description: 'Mojito, Margarita, Daiquiri y más. Preparados con técnicas tradicionales y ingredientes premium.',
+    icon: Wine,
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663493930384/bnzY8ZPTnsMF9HbFfegyZD/cocktail-2-AZYUXGg9D7swbZjoUDLBLR.webp',
+    color: 'from-amber-500 to-orange-500'
   },
   {
     id: 2,
-    name: 'Snacks & Dulces',
-    description: 'Galletas, frituras y golosinas para tus momentos especiales',
-    icon: Zap,
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663493930384/bnzY8ZPTnsMF9HbFfegyZD/products-showcase-NXctBHpo9BkppW6zCuR5uQ.webp',
-    color: 'from-yellow-500 to-orange-500'
+    name: 'Cócteles Signature',
+    description: 'Creaciones exclusivas de nuestros mixólogos. Bebidas innovadoras con sabores únicos.',
+    icon: Sparkles,
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663493930384/bnzY8ZPTnsMF9HbFfegyZD/cocktail-1-nuwYyb5sczW3zm2FBXGVvv.webp',
+    color: 'from-purple-500 to-pink-500'
   },
   {
     id: 3,
-    name: 'Productos Básicos',
-    description: 'Arroz, aceite, azúcar y todo lo que necesitas para tu hogar',
-    icon: Leaf,
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663493930384/bnzY8ZPTnsMF9HbFfegyZD/products-showcase-NXctBHpo9BkppW6zCuR5uQ.webp',
-    color: 'from-green-500 to-emerald-500'
+    name: 'Shots Premium',
+    description: 'Selección de shots con licores importados. Perfectos para celebrar con amigos.',
+    icon: Flame,
+    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663493930384/bnzY8ZPTnsMF9HbFfegyZD/cocktail-3-fVHjGwfoYZS3mEZHe62hy4.webp',
+    color: 'from-red-500 to-rose-500'
   }
 ];
 
@@ -34,10 +34,10 @@ export default function Products() {
         {/* Header */}
         <div className="text-center mb-12 animate-fadeInUp">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Nuestros Productos
+            Nuestras Bebidas
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Selecciona entre nuestras categorías principales. Tenemos todo lo que necesitas a precios accesibles.
+            Disfruta de cócteles premium preparados por nuestros mixólogos expertos
           </p>
         </div>
 
@@ -72,7 +72,7 @@ export default function Products() {
                   </div>
                   <p className="text-muted-foreground mb-4">{product.description}</p>
                   <button className="w-full py-2 px-4 bg-primary/10 text-primary hover:bg-primary hover:text-white rounded-lg font-semibold transition-all duration-200">
-                    Ver Más
+                    Ver Menú
                   </button>
                 </div>
               </div>
@@ -83,18 +83,18 @@ export default function Products() {
         {/* CTA Section */}
         <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-8 md:p-12 text-center animate-fadeInUp">
           <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-            ¿No ves lo que buscas?
+            Reserva tu Mesa
           </h3>
           <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-            Tenemos muchos más productos disponibles. Contáctanos por WhatsApp y pregunta por lo que necesitas.
+            Disfruta de una experiencia única en LA RAZA RD. Contáctanos para reservar tu mesa o conocer nuestros eventos especiales.
           </p>
           <a
-            href="https://wa.me/18095551234?text=Hola,%20¿qué%20otros%20productos%20tienen%20disponibles?"
+            href="https://wa.me/18095995176?text=Hola,%20me%20gustaría%20reservar%20una%20mesa%20en%20LA%20RAZA%20RD"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary inline-flex"
           >
-            Consultar Disponibilidad
+            Reservar Ahora
           </a>
         </div>
       </div>

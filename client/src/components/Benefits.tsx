@@ -1,47 +1,47 @@
-import { Zap, Heart, DollarSign, Clock, Users, Shield } from 'lucide-react';
+import { Music, Users, Sparkles, Clock, Flame, Award } from 'lucide-react';
 
 const benefits = [
   {
     id: 1,
-    title: 'Entrega Rápida',
-    description: 'Recibe tu pedido en 30 minutos o menos, directo en tu casa',
-    icon: Zap,
-    color: 'text-blue-500'
+    title: 'Ambiente Premium',
+    description: 'Diseño moderno con iluminación sofisticada y decoración elegante',
+    icon: Sparkles,
+    color: 'text-purple-500'
   },
   {
     id: 2,
-    title: 'Atención Cercana',
-    description: 'Personal amable y disponible para ayudarte en todo momento',
-    icon: Heart,
-    color: 'text-red-500'
+    title: 'Mixología Experta',
+    description: 'Nuestros mixólogos crean cócteles únicos con técnicas profesionales',
+    icon: Flame,
+    color: 'text-orange-500'
   },
   {
     id: 3,
-    title: 'Precios Accesibles',
-    description: 'Ofertas y promociones especiales para nuestros clientes',
-    icon: DollarSign,
-    color: 'text-green-500'
+    title: 'Música en Vivo',
+    description: 'Disfruta de música en vivo y DJ sets durante los fines de semana',
+    icon: Music,
+    color: 'text-pink-500'
   },
   {
     id: 4,
     title: 'Abierto Siempre',
-    description: 'Disponible de lunes a domingo para tu comodidad',
+    description: 'Disponible de lunes a domingo para que disfrutes cuando quieras',
     icon: Clock,
-    color: 'text-orange-500'
+    color: 'text-blue-500'
   },
   {
     id: 5,
-    title: 'Comunidad Local',
-    description: 'Apoyamos a pequeños productores de la zona',
+    title: 'Comunidad Vibrante',
+    description: 'Conoce gente interesante en un ambiente acogedor y divertido',
     icon: Users,
-    color: 'text-purple-500'
+    color: 'text-cyan-500'
   },
   {
     id: 6,
-    title: 'Garantía de Calidad',
-    description: 'Productos frescos y de calidad garantizada',
-    icon: Shield,
-    color: 'text-cyan-500'
+    title: 'Eventos Especiales',
+    description: 'Organiza tu fiesta, cumpleaños o evento corporativo con nosotros',
+    icon: Award,
+    color: 'text-yellow-500'
   }
 ];
 
@@ -55,7 +55,7 @@ export default function Benefits() {
             ¿Por Qué Elegir LA RAZA RD?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Somos más que una tienda, somos parte de tu comunidad
+            Más que un bar, es una experiencia de vida nocturna premium
           </p>
         </div>
 
@@ -87,7 +87,7 @@ export default function Benefits() {
         <div className="grid md:grid-cols-3 gap-6 mt-16">
           <div className="text-center p-6 bg-white rounded-xl shadow-md animate-fadeInUp" style={{ animationDelay: '400ms' }}>
             <div className="text-4xl font-bold text-primary mb-2">5+</div>
-            <p className="text-muted-foreground">Años de servicio</p>
+            <p className="text-muted-foreground">Años de experiencia</p>
           </div>
           <div className="text-center p-6 bg-white rounded-xl shadow-md animate-fadeInUp" style={{ animationDelay: '500ms' }}>
             <div className="text-4xl font-bold text-primary mb-2">1000+</div>

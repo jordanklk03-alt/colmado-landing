@@ -1,8 +1,8 @@
-import { MessageCircle, Zap } from 'lucide-react';
+import { MessageCircle, Music } from 'lucide-react';
 
 export default function Hero() {
-  const whatsappNumber = '18095995176'; // Número actualizado
-  const whatsappMessage = 'Hola, quiero hacer un pedido en LA RAZA';
+  const whatsappNumber = '18095995176';
+  const whatsappMessage = 'Hola, me gustaría reservar una mesa en LA RAZA RD';
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-orange-50 to-white">
@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="w-full z-30 shadow-lg">
         <img
           src="https://d2xsxph8kpxj0f.cloudfront.net/310519663493930384/bnzY8ZPTnsMF9HbFfegyZD/banner-la-raza-V345udXvy5KA2LTk8XiWpC.webp"
-          alt="LA RAZA - Colmado Dominicano"
+          alt="LA RAZA - Drink Bar Moderno"
           className="w-full h-auto object-cover"
           loading="lazy"
         />
@@ -21,8 +21,8 @@ export default function Hero() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663493930384/bnzY8ZPTnsMF9HbFfegyZD/hero-colmado-LF29AZSWR8HGfuzaXLBXgW.webp"
-            alt="LA RAZA RD"
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663493930384/bnzY8ZPTnsMF9HbFfegyZD/drink-bar-hero-XzZjHxcDoHSLPKtQaC84hm.webp"
+            alt="LA RAZA RD - Drink Bar"
             className="w-full h-full object-cover opacity-30"
             loading="lazy"
           />
@@ -35,15 +35,15 @@ export default function Hero() {
             {/* Left Content */}
             <div className="animate-slideInLeft">
               <div className="inline-block mb-4 px-4 py-2 bg-primary/10 rounded-full">
-                <span className="text-primary font-semibold text-sm">🇩🇴 De aquí, para nuestra gente</span>
+                <span className="text-primary font-semibold text-sm">🍹 Drink Bar Moderno</span>
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 leading-tight">
-                LA RAZA RD - Tu <span className="text-primary">Confianza</span>
+                LA RAZA RD - Tu <span className="text-primary">Experiencia</span>
               </h1>
               
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Productos frescos, precios accesibles y atención cercana. Pide por WhatsApp y recibe tu pedido rápido en tu casa.
+                Cócteles premium, ambiente sofisticado y música en vivo. Vive la mejor noche de tu vida en nuestro drink bar moderno.
               </p>
 
               {/* CTA Buttons */}
@@ -55,7 +55,7 @@ export default function Hero() {
                   className="btn-primary justify-center"
                 >
                   <MessageCircle size={20} />
-                  <span>Pedir Ahora</span>
+                  <span>Reservar Mesa</span>
                 </a>
                 
                 <button
@@ -65,7 +65,7 @@ export default function Hero() {
                   }}
                   className="px-6 py-3 border-2 border-primary text-primary hover:bg-primary/5 active:scale-95 transition-all duration-200 rounded-lg font-semibold"
                 >
-                  Ver Productos
+                  Ver Menú de Bebidas
                 </button>
               </div>
 
@@ -73,11 +73,11 @@ export default function Hero() {
               <div className="flex flex-col sm:flex-row gap-6 text-sm">
                 <div className="flex items-center gap-2">
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Zap size={20} className="text-primary" />
+                    <Music size={20} className="text-primary" />
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground">Entrega Rápida</p>
-                    <p className="text-muted-foreground">En 30 minutos</p>
+                    <p className="font-semibold text-foreground">Música en Vivo</p>
+                    <p className="text-muted-foreground">Viernes y Sábados</p>
                   </div>
                 </div>
                 
@@ -86,8 +86,8 @@ export default function Hero() {
                     <span className="text-primary font-bold">✓</span>
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground">100% Confiable</p>
-                    <p className="text-muted-foreground">Desde 2020</p>
+                    <p className="font-semibold text-foreground">Ambiente Premium</p>
+                    <p className="text-muted-foreground">Diseño Moderno</p>
                   </div>
                 </div>
               </div>
@@ -98,8 +98,8 @@ export default function Hero() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent rounded-3xl blur-3xl"></div>
                 <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663493930384/bnzY8ZPTnsMF9HbFfegyZD/community-vibes-ju4MpnU8YPHWuhJaudWJpB.webp"
-                  alt="Comunidad LA RAZA RD"
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663493930384/bnzY8ZPTnsMF9HbFfegyZD/bar-interior-aotKHiaWvuP5rof5UkKeVE.webp"
+                  alt="Interior LA RAZA RD"
                   className="relative rounded-3xl shadow-2xl object-cover w-full h-96"
                   loading="lazy"
                 />
