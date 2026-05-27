@@ -43,43 +43,44 @@
 }
 
 :root {
-  /* Colores principales: Naranja cálido dominicano */
-  --primary: #EA580C;
+  /* Colores principales: Paleta Caribeña Cálida */
+  /* Naranja tropical, turquesa caribeño, crema cálida */
+  --primary: #FF6B35;        /* Naranja tropical vibrante */
   --primary-foreground: #FFFFFF;
-  --sidebar-primary: #D94A08;
+  --sidebar-primary: #E85A2A;
   --sidebar-primary-foreground: #FFFFFF;
-  --chart-1: #EA580C;
-  --chart-2: #F07A2F;
-  --chart-3: #F59052;
-  --chart-4: #D94A08;
-  --chart-5: #B83A06;
+  --chart-1: #FF6B35;        /* Naranja tropical */
+  --chart-2: #FFA500;        /* Naranja dorado */
+  --chart-3: #FFB84D;        /* Naranja claro */
+  --chart-4: #FF8C42;        /* Naranja coral */
+  --chart-5: #E85A2A;        /* Naranja oscuro */
   
   --radius: 0.65rem;
   
-  /* Light theme (default) */
-  --background: oklch(0.98 0 0);
-  --foreground: oklch(0.2 0.01 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.2 0.01 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.2 0.01 65);
-  --secondary: oklch(0.95 0.01 286);
-  --secondary-foreground: oklch(0.3 0.01 65);
-  --muted: oklch(0.92 0.01 286);
-  --muted-foreground: oklch(0.55 0.01 286);
-  --accent: #EA580C;
+  /* Light theme (default) - Paleta caribeña */
+  --background: #FFF9F5;     /* Crema cálida */
+  --foreground: #2D1810;     /* Marrón oscuro cálido */
+  --card: #FFFBF7;           /* Crema muy clara */
+  --card-foreground: #2D1810;
+  --popover: #FFFBF7;
+  --popover-foreground: #2D1810;
+  --secondary: #20B2AA;      /* Turquesa caribeño */
+  --secondary-foreground: #FFFFFF;
+  --muted: #FFE5CC;          /* Crema cálida clara */
+  --muted-foreground: #8B5A3C;  /* Marrón medio */
+  --accent: #FF6B35;         /* Naranja tropical */
   --accent-foreground: #FFFFFF;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: #EA580C;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: #EA580C;
+  --border: #FFD9B3;         /* Borde naranja claro */
+  --input: #FFF9F5;          /* Crema cálida */
+  --ring: #FF6B35;           /* Naranja tropical */
+  --sidebar: #FFF9F5;        /* Crema cálida */
+  --sidebar-foreground: #2D1810;
+  --sidebar-accent: #FF6B35; /* Naranja tropical */
   --sidebar-accent-foreground: #FFFFFF;
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: #EA580C;
+  --sidebar-border: #FFD9B3; /* Borde naranja claro */
+  --sidebar-ring: #FF6B35;   /* Naranja tropical */
 }
 
 @layer base {
